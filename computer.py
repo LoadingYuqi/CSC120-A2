@@ -16,13 +16,11 @@ class computer:
     price: int = ""
 
     # The __init__ constructs an object in the computer store
-    def __init__(self, descriptionText, processor, hardDrive, memoryInt, operatingSystem, yearMade, priceInt):
-        self.description = descriptionText
+    def __init__(self, name, processor, hardDrive, memoryInt, operatingSystem, yearMade, priceInt):
+        self.description = name
         self.processor_type = processor
         self.hard_drive_capacity = hardDrive
         self.memory = memoryInt
         self.operating_system = operatingSystem
         self.year_made = yearMade
         self.price = priceInt
-
-    # What methods will you need?
