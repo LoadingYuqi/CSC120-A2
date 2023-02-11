@@ -46,6 +46,11 @@ class oo_resale_shop:
     def updateOS(self, new_OS):
         computer.operating_system = new_OS
 
+    # Reset price based on years of useage, update price and OS
+    def refurbish(self):
+        pass
+    
+
 
 def main(): # example of taking in a computer , processing, and selling it
     my_store = oo_resale_shop([], 0) #create empty store
