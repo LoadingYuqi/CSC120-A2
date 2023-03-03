@@ -25,13 +25,13 @@ class oo_resale_shop:
         print("-" * 21)
 
     
-    def addComputer(self, newComputer):
+    def buy(self, newComputer):
         """The addComputer method allows user to input the information of a new computer and add it to the inventory
         """
         self.inventory.append(newComputer)
         print ("New item", newComputer.description, "added!")
         
-    def sellComputer(self, item):
+    def sell(self, item):
         """The sellComputer method checks if a ID is in the inventory and print appropriate message
         """
         if item in self.inventory:
@@ -80,12 +80,12 @@ def main(): # example of taking in a computer , processing, and selling it
         "macOS Big Sur", 
         2013, 
         1500)
-    my_store.addComputer(c) # add a new computer to the store
+    my_store.buy(c) # add a new computer to the store
     my_store.refurbish(c)
     print("Would you like to buy", c.description, "? True or False:")
     response = bool(input())
     if response:
-        my_store.sellComputer(c)
+        my_store.sell(c)
     else:
         print("Have a nice day!")   
     
