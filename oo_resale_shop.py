@@ -6,8 +6,8 @@
 """
 from computer import *
 
-class oo_resale_shop:
-    """The oo_resale_shop class uses Object-Oriented programming to construct a computer resale shop where the shop can buy, sale, and refurbish computers. 
+class ResaleShop:
+    """The ResaleShop class uses Object-Oriented programming to construct a computer resale shop where the shop can buy, sale, and refurbish computers. 
     """
 
     inventory: list = []
@@ -72,8 +72,8 @@ class oo_resale_shop:
 
 
 def main(): # example of taking in a computer , processing, and selling it
-    my_store = oo_resale_shop([], 0) #create empty store
-    c:computer = computer("Mac Pro (Late 2013)",
+    my_store = ResaleShop([], 0) #create empty store
+    c:Computer = Computer("Mac Pro (Late 2013)",
         "3.5 GHc 6-Core Intel Xeon E5",
         1024, 
         64,

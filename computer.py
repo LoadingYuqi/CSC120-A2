@@ -5,7 +5,7 @@
     Date: 11 February 2023
 """
 
-class computer:
+class Computer:
 
     # Attributes of a computer in the store
     description: str = ""
